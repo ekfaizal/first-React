@@ -1,18 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import {NavBar1} from './navbar';
-
+import Aside from './components/aside';
+import Body from './components/body';
+import FooterDiv from './components/footer';
+import Header from './components/Header';
+// import footerDiv from './components/footer';
+import React from 'react';
 function App() {
   
   return (
-    <>
     <div>
-      <NavBar1/>
-      <h1>Hello Prosevo</h1>
-      <div></div>
+    
+    <div className='d-flex flex-row'>
+    <Aside/>   
+    <Body/>
+
     </div>
-    <div></div>
-    </>
+    <Header/>
+    <FooterDiv/>
+    </div>
   );
 }
 
